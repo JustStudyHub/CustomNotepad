@@ -7,10 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="G_Main">
-        <Menu HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="792" >
+        <Menu x:Name="MainMenu" HorizontalAlignment="Left" VerticalAlignment="Top"  >
+            <MenuItem x:Name="MI_File" Header="File" >
+                <MenuItem x:Name="MI_SaveFile" Header="Save" Click="OnSaveFileClick" />
+                <MenuItem x:Name="MI_OpenFile" Header="Open" Click="OnOpenFileClick" />
+            </MenuItem>
             <MenuItem x:Name="MI_Plugins" Header="Plugins"></MenuItem>
         </Menu>
-        <RichTextBox x:Name="RTB_Text" HorizontalAlignment="Left" Margin="0,21,0,0" VerticalAlignment="Top" MinHeight="2">
+        <RichTextBox x:Name="RTB_Text" HorizontalAlignment="Left" Margin="0,18,0,0" VerticalAlignment="Top" MinHeight="2" Height="21">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="RichTextBox"/>

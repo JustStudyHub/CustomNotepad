@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace PluginsContracts
 {
-    public interface ITextParser : IPlugin
+    public interface ITextEditor : IPlugin
     {
-        StringBuilder ChangeText(StringBuilder text);
-        StringBuilder ChangeText(string text);
+        void EditText(Window window, RichTextBox richTextBox);
     }
 }

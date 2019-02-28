@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WordCounter
 {
-    public class Class1
+    class WordColoring
     {
     }
 }

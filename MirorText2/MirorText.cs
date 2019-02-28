@@ -1,32 +1,30 @@
-﻿using System;
+﻿using PluginsContracts;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.Linq;
 using System.Text;
-using PluginsContracts;
-using System.ComponentModel.Composition;
-using System.ComponentModel.Composition.Hosting;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Documents;
 
-namespace MirorText 
+namespace MirorText2
 {
     [Export(typeof(IPlugin))]
-    public class MirorText : ITextChanger
+    public class MirorText2 : ITextEditor
     {
-        public string Name => "MirorText";
+        public string Name => "MirorText2";        
 
-        public StringBuilder ChangeText(StringBuilder text)
+        public void EditText(Window window, RichTextBox richTextBox)
         {
-            if (string.IsNullOrEmpty(text.ToString()))
-                return new StringBuilder();
-            StringBuilder resSb = new StringBuilder();
-            string[] sentence = text.ToString().Split('.');
-            foreach(var s in sentence)
-            {
-                string reverseSentence = ReverseSentence(s);
-                resSb.Append(reverseSentence);
-            }
-            return resSb;
+            TextRange tr = new TextRange(richTextBox.Document.ContentStart, richTextBox.Document.ContentEnd);
+            string text = ChangeText(tr.Text);
+            richTextBox.SelectAll();
+            richTextBox.Selection.Text = "";
+            richTextBox.AppendText(text);
         }
-
-        public string ChangeText(string text)
+        private string ChangeText(string text)
         {
             if (string.IsNullOrEmpty(text))
                 return string.Empty;
@@ -40,11 +38,11 @@ namespace MirorText
             return resSb.ToString();
         }
 
-        string ReverseSentence(string sentence)
+        private string ReverseSentence(string sentence)
         {
             if (string.IsNullOrEmpty(sentence))
                 return string.Empty;
-            if(sentence == "\r\n")
+            if (sentence == "\r\n")
                 return string.Empty;
 
             StringBuilder sb = new StringBuilder();

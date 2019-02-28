@@ -7,9 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomNotepad", "CustomNote
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginsContracts", "PluginsContracts\PluginsContracts.csproj", "{83CB5D8F-8B6D-498E-8A61-FD13E0926473}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCounter", "WordCounter\WordCounter.csproj", "{E2B06289-0F78-4E8C-A1F6-475F306529B7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MirorText", "MirorText\MirorText.csproj", "{358141DC-741F-4CE7-B3D5-DCD3C6281C77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeUI", "ChangeUI\ChangeUI.csproj", "{5B8265A8-6ACF-4A76-B2E5-594CCD12B142}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MirorText2", "MirorText2\MirorText2.csproj", "{7891EEAA-F289-479C-9B8B-30720DF1AF49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordFinder", "WordFinder\WordFinder.csproj", "{EA05BDDD-1103-4B5D-8D50-FCE9617A834F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +29,22 @@ Global
 		{83CB5D8F-8B6D-498E-8A61-FD13E0926473}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83CB5D8F-8B6D-498E-8A61-FD13E0926473}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83CB5D8F-8B6D-498E-8A61-FD13E0926473}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2B06289-0F78-4E8C-A1F6-475F306529B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2B06289-0F78-4E8C-A1F6-475F306529B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2B06289-0F78-4E8C-A1F6-475F306529B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2B06289-0F78-4E8C-A1F6-475F306529B7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{358141DC-741F-4CE7-B3D5-DCD3C6281C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{358141DC-741F-4CE7-B3D5-DCD3C6281C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{358141DC-741F-4CE7-B3D5-DCD3C6281C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{358141DC-741F-4CE7-B3D5-DCD3C6281C77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B8265A8-6ACF-4A76-B2E5-594CCD12B142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8265A8-6ACF-4A76-B2E5-594CCD12B142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8265A8-6ACF-4A76-B2E5-594CCD12B142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8265A8-6ACF-4A76-B2E5-594CCD12B142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7891EEAA-F289-479C-9B8B-30720DF1AF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7891EEAA-F289-479C-9B8B-30720DF1AF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7891EEAA-F289-479C-9B8B-30720DF1AF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7891EEAA-F289-479C-9B8B-30720DF1AF49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA05BDDD-1103-4B5D-8D50-FCE9617A834F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA05BDDD-1103-4B5D-8D50-FCE9617A834F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA05BDDD-1103-4B5D-8D50-FCE9617A834F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA05BDDD-1103-4B5D-8D50-FCE9617A834F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
