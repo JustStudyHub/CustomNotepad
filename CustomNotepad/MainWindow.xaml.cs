@@ -40,10 +40,6 @@ namespace CustomNotepad
                 {
                     menuItem.Click += OnTextEdit;
                 }
-                if (interfaces.Contains(typeof(IUIChanger)))
-                {
-                    menuItem.Click += OnChangerUI;
-                }
                 MI_Plugins.Items.Add(menuItem);
                 menuPlugins.Add(t.Name, p);
             }
@@ -70,18 +66,6 @@ namespace CustomNotepad
                 RTB_Text.SelectAll();
                 RTB_Text.Selection.Text = "";
                 RTB_Text.AppendText(text);
-            }
-        }
-
-        private void OnChangerUI(object sender, RoutedEventArgs e)
-        {
-            string menuHeader = ((MenuItem)sender).Header.ToString();
-            if (menuPlugins.ContainsKey(menuHeader))
-            {
-                IUIChanger plugin = (IUIChanger)menuPlugins[menuHeader];
-                plugin.ChangeUI(this);
-                plugin.AddItem();
-                plugin.ChangeMainMenu(this, MainMenu);
             }
         }
 

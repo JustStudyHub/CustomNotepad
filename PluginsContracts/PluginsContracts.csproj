@@ -48,7 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ITextEditor.cs" />
-    <Compile Include="IUIChanger.cs" />
     <Compile Include="ITextChanger.cs" />
     <Compile Include="IPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
