@@ -96,7 +96,7 @@ namespace WordFinder
                         TextPointer selectionEnd = selectionStart.GetPositionAtOffset(word.Length, LogicalDirection.Forward);
                         endFindPos = selectionEnd;
                         TextRange selection = new TextRange(selectionStart, selectionEnd);
-                        //selection.ApplyPropertyValue(TextElement.FontWeightProperty, FontWeights.Bold);
+                        /selection.ApplyPropertyValue(TextElement.FontWeightProperty, FontWeights.Bold);
                         FrameworkContentElement e = selectionStart.Parent as FrameworkContentElement;
                         if (e != null)
                             e.BringIntoView();
