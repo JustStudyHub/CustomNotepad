@@ -29,7 +29,6 @@ namespace TextFormatingEditor
         {
             Menu editorMenu = new Menu();
             Thickness menuMargin = new Thickness();
-            editorMenu.Height = 19;
             menuMargin.Top = 19;
             editorMenu.VerticalAlignment = VerticalAlignment.Top;
             editorMenu.Margin = menuMargin;
@@ -51,7 +50,7 @@ namespace TextFormatingEditor
             mi_normal.Click += OnClick;
 
             Thickness rtbMargin = _richTextBox.Margin;
-            rtbMargin.Top += menuMargin.Top;
+            rtbMargin.Top += menuMargin.Top + 1;
             _richTextBox.Margin = rtbMargin;
 
             editorMenu.Items.Add(mi_normal);
